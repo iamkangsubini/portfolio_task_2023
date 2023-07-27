@@ -16,6 +16,7 @@
     width: 242px; height: 242px;
     border-radius: 50%;
     margin-bottom: 40px;
+    animation: up_down 0.8s linear alternate infinite;
 }
 .bg .profile h1 {
     font-family: 폴트;
@@ -52,6 +53,13 @@
     height: 612px;
 }
 .bg .move img {}
+.bg .move img:nth-child(1) {
+    transform: rotate(-10deg);
+    animation: incline 10s linear infinite;
+}
+.bg .move img:nth-child(2) {
+    transform: rotate(10deg);
+    background: rgb(0,0,0,80);}
 /* contents */
 .bg .contents {
     width: 1142px; height: 650px;
@@ -174,4 +182,21 @@
     line-height: 50px;
     letter-spacing: -0.02em;
     color: #fff;
+}
+/* keyframes */
+@keyframes up_down {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes incline {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 1000px;
+    }
 }
