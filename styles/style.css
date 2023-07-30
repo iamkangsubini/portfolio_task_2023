@@ -2,7 +2,7 @@
 .bg {
     background: url(../images/7598163.jpg) no-repeat fixed center;
     background-size: cover;
-}
+    }
 /* profile */
 .bg .profile {
     width: 1142px; height: 901px;
@@ -17,6 +17,7 @@
     border-radius: 50%;
     margin-bottom: 40px;
     animation: up_down 0.8s linear alternate infinite;
+    border: 10px solid #fff;
 }
 .bg .profile h1 {
     font-family: 폴트;
@@ -80,7 +81,7 @@
     border-radius: 100px 100px 0 0;
 }
 .bg .contents .detail1 .explain {
-    width: 271px; height: 104px;
+    width: 271px; height: 250px;
     background: #fff;
     padding: 24px 42.5px;
     text-align: center;
@@ -105,7 +106,7 @@
     border-radius: 100px 100px 0 0;
 }
 .bg .contents .detail2 .explain {
-    width: 271px; height: 104px;
+    width: 271px; height: 250px;
     background: #fff;
     padding: 24px 42.5px;
     text-align: center;
@@ -130,7 +131,7 @@
     border-radius: 100px 100px 0 0;
 }
 .bg .contents .detail3 .explain {
-    width: 271px; height: 104px;
+    width: 271px; height: 250px;
     background: #fff;
     padding: 24px 42.5px;
     text-align: center;
@@ -155,7 +156,7 @@
     border-radius: 100px 100px 0 0;
 }
 .bg .contents .detail4 .explain {
-    width: 271px; height: 104px;
+    width: 271px; height: 250px;
     background: #fff;
     padding: 24px 42.5px;
     text-align: center;
@@ -194,9 +195,9 @@
 }
 @keyframes incline {
     0% {
-        background-position: 0 0;
+        background-position-x: 0;
     }
     100% {
-        background-position: 0 1000px;
+        background-position-x: -1000px;
     }
 }
